@@ -21,16 +21,16 @@ class JogoMemoriaActivity : AppCompatActivity() {
     private var qtdCartas: Int = 6
     private var qtdColunas: Int = 4
     private val imagens = listOf(
-        R.drawable.flor01,
-        R.drawable.flor02,
-        R.drawable.flor03,
-        R.drawable.flor04,
-        R.drawable.flor05,
-        R.drawable.flor06,
-        R.drawable.flor07,
-        R.drawable.flor08,
-        R.drawable.flor09,
-        R.drawable.flor10,
+        R.drawable.baleia,
+        R.drawable.caranguejo,
+        R.drawable.coruja,
+        R.drawable.elefante,
+        R.drawable.girafa,
+        R.drawable.golfinho,
+        R.drawable.gorila,
+        R.drawable.leao,
+        R.drawable.raposa,
+        R.drawable.zebra,
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -113,7 +113,7 @@ class JogoMemoriaActivity : AppCompatActivity() {
                         crossfade(layout, false)
                         delay(1500)
                         crossfade(layout, true)
-                        if (qtdCartas == 12) {
+                        if (qtdCartas == 12) { //terminou o jogo
 //                            finish()
                         } else {
                             iniciarJogo()
